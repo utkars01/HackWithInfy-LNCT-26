@@ -5,15 +5,12 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        hashmap = {}
+        seen = {}  # value -> index
 
         for i, num in enumerate(nums):
-          complement = target - num
+            complement = target - num
 
-          if complement in hashmap:
-            return [hashmap[complement], i]
+            if complement in seen:
+                return [seen[complement], i]
 
-          hashmap[num] = i
-        
-     
-        
+            seen[num] = i
