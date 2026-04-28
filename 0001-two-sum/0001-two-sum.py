@@ -5,7 +5,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        seen = }  # value -> index
+        seen = {}  # value -> index
 
         for i, num in enumerate(nums):
             complement = target - num
