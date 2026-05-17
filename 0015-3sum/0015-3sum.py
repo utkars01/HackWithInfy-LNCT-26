@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         nums.sort()
-        resul = []
+        result = []
 
         for i in range(len(nums)):
         # Skip duplicates
